@@ -1,8 +1,8 @@
 /********** Custom Properties **********/
 :root{
-    --first-color: #d90062;
+    --first-color: #3719ca;
     --first-alpha-color: rgba(217, 0, 98, 0.75);
-    --second-color: #14192d;
+    --second-color: #02021e;
     --second-alpha-color: rgba(20,25, 45, 0.75);
     --third-color: #501464;
     --third-alpha-color: rgba(80, 20, 100, 0.75);
@@ -166,6 +166,7 @@ p{
 }
 
 /********* CONTACT FORM *********/
+
 .contact-form{
     margin: 2rem auto;
     padding: 1rem;
@@ -200,10 +201,14 @@ p{
     margin-top: 0;    
     cursor: pointer;
     transition: all .5s ease-out;
+    border: 2px solid var(--first-color);
 }
 
 .contact-form input[type="submit"]:hover{
     opacity: .75;
+    background: transparent;
+    transform: scale(102%);
+    color: var(--first-color);
 }
 
 .contact-form *::placeholder{
@@ -309,10 +314,11 @@ p{
 .menu a{
     padding: 1rem;
     font-size: 1.5rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-align: center;
     text-decoration: none;
-    color: var(--first-color);
+    color: var(--white-color);
+    /* color: var(--first-color); */
 }
 
 
@@ -445,6 +451,17 @@ progress::-moz-progress-bar{
     text-decoration: none;
     color: var(--white-color);
     background-color: var(--first-color);
+    border: 2px solid var(--first-color);
+}
+
+.btn#contactme{
+    color: var(--white-color);
+}
+
+.btn:hover{
+    color: var(--first-color);
+    background: transparent;
+    transform: scale(102%);
 }
 
 .container{
@@ -539,7 +556,7 @@ progress::-moz-progress-bar{
 }
 
 .footer{
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     margin-bottom: var(--header-height);
     color: var(--white-color);
     padding: .5rem;
@@ -567,6 +584,10 @@ progress::-moz-progress-bar{
     font-weight: bold;
     font-size: 2rem;
     text-decoration: none;
+}
+
+.portfolio{
+    background-color: #f5f5f5;
 }
 
 .portfolio-card{
@@ -709,7 +730,7 @@ progress::-moz-progress-bar{
     }
 
     .contact-cards{
-        grid-template-columns: repeat(4, 24%);
+        grid-template-columns: repeat(2, 48%);
     }
 
     .footer{
