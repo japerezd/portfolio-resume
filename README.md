@@ -1,3 +1,3 @@
 # PORTFOLIO
 
--[Landing Page Portfolio](https://japerezd.github.io/portftolio-resume/Portfolio)
+-[Landing Page Portfolio](https://japerezd.github.io/portfolio-resume/Portfolio/)
