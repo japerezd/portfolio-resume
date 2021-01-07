@@ -629,6 +629,10 @@ progress::-moz-progress-bar{
     pointer-events: auto;
 }
 
+.portfolio-card{
+    max-height: 400px;
+}
+
 .portfolio-card-info > div{
     padding: 1rem;
     border: thin solid var(--white-color);
@@ -732,6 +736,10 @@ progress::-moz-progress-bar{
     .portfolio-modal{
         flex-direction: row;
         max-width: 800px;
+    }
+
+    .portfolio-modal img{
+        max-width: 500px;
     }
 
     .portfolio-info{
